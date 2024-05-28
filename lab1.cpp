@@ -134,11 +134,11 @@ public:
 int main() {
     vector<unique_ptr<Employee>> employees;
 
-    employees.push_back(make_unique<Management>("Alice", 10, 50000));
-    employees.push_back(make_unique<Legal>("Bob", 2, 20000));
-    employees.push_back(make_unique<Sales>("Charlie", 6, 30000));
-    employees.push_back(make_unique<Audit>("Dave", 8, 40000));
-    employees.push_back(make_unique<IT>("Eve", 4, 10000));
+    employees.push_back(make_unique<Management>("sergiu", 10, 50000));
+    employees.push_back(make_unique<Legal>("dima", 2, 20000));
+    employees.push_back(make_unique<Sales>("ion", 6, 30000));
+    employees.push_back(make_unique<Audit>("test", 8, 40000));
+    employees.push_back(make_unique<IT>("david", 4, 10000));
 
     for (const auto& employee : employees) {
         employee->printInfo();
